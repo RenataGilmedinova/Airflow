@@ -32,11 +32,11 @@ default_args = {
 schedule_interval = '0 11 * * *' # отчет приходит каждый день в 11 утра
 
 import telegram
-my_token = '5918290671:AAEgWZFAZYdlBcooZjnEVbbvwZmtS05cSmI'
+my_token = '0'
 
 bot = telegram.Bot(token=my_token)
 
-chat_id = -677113209
+chat_id = -0
 
 @dag(default_args=default_args, schedule_interval='0 11 * * *', catchup=False)
 def task7_renata_feed_report():
